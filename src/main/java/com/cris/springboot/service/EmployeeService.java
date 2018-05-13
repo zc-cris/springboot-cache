@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * @Version 1.0
  **/
 // 对于缓存的一些通用配置可以使用@CacheConfig 注解完成，例如通用的cache组件等
-@CacheConfig(cacheNames = "emp")
+@CacheConfig(cacheNames = "emp", cacheManager = "EmpCacheManager")
 @Service
 public class EmployeeService {
 
